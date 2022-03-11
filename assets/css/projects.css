@@ -1,0 +1,75 @@
+#projects {
+    text-align: center;
+}
+
+#article {
+    margin: 0.5em;
+}
+
+
+.cars-game-img {
+    height: auto;
+    width: 20em;
+    padding: 0.5em
+}
+
+.website-home-img {
+    width: 20em;
+    padding: 0.5em
+}
+
+
+.api-img {
+    width: 20em;
+    padding: 0.5em
+}
+
+.title {
+    font-size: 2em;
+    text-decoration: underline;
+    margin-top: 0.5em;
+}
+
+.project {
+    margin-top: 7em;
+}
+
+.read-more-button {
+    margin-top: 0.8em;
+    padding: 0.5em 0.5em;
+    background-color: #80D4FB;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px grey;
+    border-radius: 4px;
+    transition: all 0.001s linear;
+}
+
+.read-more-button:active {
+    box-shadow: 1px 1px 2px grey;
+    transform: translateY(2px);
+}
+
+
+
+@media screen and (min-width: 1200px){
+    .row {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .project {
+        flex-basis: 34%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        justify-content: flex-end;
+    }
+
+}
+

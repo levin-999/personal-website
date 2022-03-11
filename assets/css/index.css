@@ -1,0 +1,66 @@
+[data-theme="dark"] .icon {
+    filter: invert(0.93);
+}
+
+
+.profile-image {
+    margin-top: 5em;
+    width: 15em;
+    height: auto;
+}
+
+
+#homeScreen {
+    text-align: center;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 5em 1fr;
+    grid-template-rows: 1fr 0.1em;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+#name {
+    text-align: right;
+    margin-top: 1.5em;
+    margin-right: 1.5em;
+}
+
+#title {
+    font-size: 2em;
+    margin-top: 0.6em;
+}
+
+#subtitle {
+    margin-top: 1em;
+}
+
+.icon {
+    width: 2em;
+    height: auto;
+    margin-top: 1em;
+    padding: 0.2em;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+}
+
+
+@media screen and (min-width: 800px) {
+    #title {
+        padding: 1rem;
+        font-size: 3em;
+    }
+
+    #subtitle {
+        font-size: 2em;
+    }
+
+    .icon {
+        width: 3em;
+        padding-top: 2em;
+    }
+}

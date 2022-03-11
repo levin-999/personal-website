@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa:wght@300&family=Nunito:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+
+
+[data-theme="light"] {
+    --background-color: white;
+    --font-color: black;
+}
+
+[data-theme="dark"] #darkmode-toggler {
+    filter: invert(0.93);
+}
+
+
+
+
+#darkmode-toggler {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+[data-theme="dark"] {
+    --background-color: #121212;
+    --font-color: white;
+}
+
+body {
+    transition: 0.3s;
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+.logo-in-header {
+    width: 7em;
+    padding-top: 0.3em;
+}
+
+
+
+.navbar {
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+.bar {
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 8px auto;
+    background-color: var(--font-color);
+
+}
+
+
+  
+
+
+#darkmode-toggler {
+    width: 50px;
+    height: auto;
+}
+
+
+.nav-menu {
+    z-index: 999;
+    position: absolute;
+    height: 91.3vh;
+    left: -100%;
+    top: 4.6rem;
+    background-color: var(--background-color);
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+.nav-item {
+    margin: 4.5rem 0;
+}
+
+.nav-item-top {
+    margin-top: 4rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--font-color);
+}
+
+.nav-link:hover {
+    transition: 0.3s;
+    background-color: #E0E0E0;
+    color: var(--font-color);
+}
+
+#footer {
+
+    margin-top: 5em;
+    background-color: var(--background-color);
+
+    padding: 10px 10px 0px 10px;
+    height: 4em;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+#email {
+    text-align: center;
+    text-decoration: underline;
+    color: var(--font-color);
+}
+
+
+@media screen and (min-width: 800px) {
+    .logo-in-header {
+        width: 10em;
+    }
+    
+}
